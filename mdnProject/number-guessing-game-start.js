@@ -31,7 +31,7 @@ function checkGuess(){
     var userGuess = Number(guessField.value);
     if(guessCount === 1){
         // guessCount가 1이면 텍스트 입력.
-        guesses.textContent = 'Previous guesses: ';
+        guesses.textContent = '입력한 값: ';
     }
     guesses.textContent += userGuess + ' ';
 
@@ -45,7 +45,7 @@ function checkGuess(){
         lastResult.textContent = '게임 오버!!';
         setGameOver();
     } else{
-        lastResult.textContent = 'Wrong';
+        lastResult.textContent = '오답';
 
         lastResult.style.backgroundColor = 'red';
         
